@@ -1,0 +1,25 @@
+{
+  "name": "filemetadata-freecodecamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b37t1td/filemetadata-freecodecamp.git"
+  },
+  "author": "Svetlana Linuxenko <linuxenko@yahoo.com> (http://www.linuxenko.pro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b37t1td/filemetadata-freecodecamp/issues"
+  },
+  "homepage": "https://github.com/b37t1td/filemetadata-freecodecamp#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.13.0",
+    "multer": "^1.1.0"
+  }
+}

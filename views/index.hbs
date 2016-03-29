@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>File Metadata Microservice</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="well">
+    <h2> File Metadata Microservice</h2>
+    <p>
+        freeCodeCamp's backend base api projects (challenge)
+    </p>
+  </div>
+
+  <h4>Upload file:</h4>
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+      <input type="file" class="form-control input-lg" name="upfile" >
+      <br />
+      <button type="submit" class="btn-block btn btn-info btn-lg">Submit</button>
+ </form>
+ <br />
+ <h2>
+  <span id="results-out" style="display:none;"></span>
+  </h2>
+ </div>
+
+<script>
+  $.get('/status').then(function(data) {
+    $('#results-out').show().text(JSON.stringify(data));
+  });
+</script>
+</body>
+</html>
